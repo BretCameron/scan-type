@@ -28,9 +28,9 @@ const { isAsyncFunction, isFunction, isPromise } = require('type-check-suite');
 
 ## Documentation
 
-To view our docs, click here.
+To view our docs, [click here](https://bretcameron.github.io/type-check-suite/global).
 
-## Quick Example 1
+## Quick Example
 
 ```javascript
 const { isAsyncFunction, isFunction } = require('type-check-suite');
