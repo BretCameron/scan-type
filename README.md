@@ -28,7 +28,9 @@ const { isAsyncFunction, isFunction, isPromise } = require('type-check-suite');
 
 ## Documentation
 
-To view our docs, [click here](https://bretcameron.github.io/type-check-suite/global).
+To view the docs, [click here](https://bretcameron.github.io/type-check-suite/global).
+
+The available methods include: `isArguments`, `isArray`, `isArrayBuffer`, `isAsyncFunction`, `isBigInt`, `isBigInt64Array`, `isBigUint64Array`, `isBoolean`, `isClass`, `isDataView`, `isDate`, `isError`, `isFloat`, `isFloat32Array`, `isFloat64Array`, `isFunction`, `isGenerator`, `isGeneratorFunction`, `isGlobalThis`, `isInfinite`, `isInt8Array`, `isInt16Array`, `isInt32Array`, `isInteger`, `isIntl`, `isJSON`, `isMap`, `isMath`, `isNaN`, `isNull`, `isNumber`, `isObject`, `isPrimitive`, `isPromise`, `isProxy`, `isReflect`, `isRegExp`, `isSafeFloat`, `isSafeInteger`, `isSet`, `isSharedArrayBuffer`, `isString`, `isSymbol`, `isTypedArray`, `isUint8Array`, `isUint8ClampedArray`, `isUint16Array`, `isUint32Array`, `isUndefined`, `isWeakMap`, `isWeakSet` and `isWebAssembly`.
 
 ## Quick Example
 
