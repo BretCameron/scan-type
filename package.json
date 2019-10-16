@@ -1,5 +1,5 @@
 {
-  "name": "type-check-suite",
+  "name": "scan-type",
   "version": "1.0.0",
   "description": "A lightweight type-checking library for JavaScript",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "jsdoc": "jsdoc src/TypeChecker.js README.md"
+    "jsdoc": "jsdoc src/ScanType.js README.md"
   },
   "keywords": [],
   "author": "Bret Cameron",
