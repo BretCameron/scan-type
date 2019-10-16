@@ -1,10 +1,37 @@
 # scan-type
 
-A simple, comprehensive and lightweight type-checking library for JavaScript.
+**A simple, comprehensive and lightweight type-checking library for JavaScript.**
 
-Most type-checking libraries are compatible with 10 or 20 types. This library offers 50+, but the minified library is still just 3KB in size.
+Most type-checking libraries are compatible with 10 or 20 types. This library offers 50+. But, once minified, the library is still only 3KB in size.
 
-It's easy to check for anything from a `Number`, `String` or `Array` to a `Promise`, `WeakMap` or `Generator` – and much more!
+Here's a quick example:
+
+```javascript
+const { 
+  isNumber,
+  isFloat,
+  isString,
+  isArray,
+  isPromise,
+  isWeakMap,
+  isGenerator,
+  isDataView,
+  isAsyncFunction,
+  isInfinite,
+} = require('scan-type');
+
+isNumber(1); // true
+isFloat(1.5); // true
+isString("abc"); // true
+isArray(new Array()); // true
+isPromise(new Promise(resolve => resolve())); // true
+isWeakMap(new WeakMap()); // true
+isGenerator((function* () { })()); // true
+isDataView(new DataView(new ArrayBuffer())); // true
+isAsyncFunction(async function() {}); // true
+isInfinite(-Infinity); // true
+
+```
 
 ## Install
 
@@ -20,28 +47,8 @@ Using yarn:
 yarn add scan-type
 ```
 
-## Import
-
-```javascript
-const { isAsyncFunction, isFunction, isPromise } = require('scan-type');
-```
-
 ## Documentation
 
 To view the docs, [click here](https://bretcameron.github.io/scan-type/global).
 
-The available methods include: `isArguments`, `isArray`, `isArrayBuffer`, `isAsyncFunction`, `isBigInt`, `isBigInt64Array`, `isBigUint64Array`, `isBoolean`, `isClass`, `isDataView`, `isDate`, `isError`, `isFloat`, `isFloat32Array`, `isFloat64Array`, `isFunction`, `isGenerator`, `isGeneratorFunction`, `isGlobalThis`, `isInfinite`, `isInt8Array`, `isInt16Array`, `isInt32Array`, `isInteger`, `isIntl`, `isJSON`, `isMap`, `isMath`, `isNaN`, `isNull`, `isNumber`, `isObject`, `isPrimitive`, `isPromise`, `isProxy`, `isReflect`, `isRegExp`, `isSafeFloat`, `isSafeInteger`, `isSet`, `isSharedArrayBuffer`, `isString`, `isSymbol`, `isTypedArray`, `isUint8Array`, `isUint8ClampedArray`, `isUint16Array`, `isUint32Array`, `isUndefined`, `isWeakMap`, `isWeakSet` and `isWebAssembly`.
-
-## Quick Example
-
-```javascript
-const { isAsyncFunction, isFunction } = require('scan-type');
-
-function run(fn) {
-  if (isFunction(fn) || isAsyncFunction(fn)) {
-    fn();
-  } else {
-    return new TypeError('run expects a function or an async function.');
-  }
-}
-```
+In this version of *scan-type*, the available methods are: `isArguments`, `isArray`, `isArrayBuffer`, `isAsyncFunction`, `isBigInt`, `isBigInt64Array`, `isBigUint64Array`, `isBoolean`, `isClass`, `isDataView`, `isDate`, `isError`, `isFloat`, `isFloat32Array`, `isFloat64Array`, `isFunction`, `isGenerator`, `isGeneratorFunction`, `isGlobalThis`, `isInfinite`, `isInt8Array`, `isInt16Array`, `isInt32Array`, `isInteger`, `isIntl`, `isJSON`, `isMap`, `isMath`, `isNaN`, `isNull`, `isNumber`, `isObject`, `isPrimitive`, `isPromise`, `isProxy`, `isReflect`, `isRegExp`, `isSafeFloat`, `isSafeInteger`, `isSet`, `isSharedArrayBuffer`, `isString`, `isSymbol`, `isTypedArray`, `isUint8Array`, `isUint8ClampedArray`, `isUint16Array`, `isUint32Array`, `isUndefined`, `isWeakMap`, `isWeakSet` and `isWebAssembly`.
