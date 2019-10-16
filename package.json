@@ -1,0 +1,19 @@
+{
+  "name": "type-check-suite",
+  "version": "1.0.0",
+  "description": "A lightweight type-checking library for JavaScript",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "jsdoc": "jsdoc src/TypeChecker.js README.md"
+  },
+  "keywords": [],
+  "author": "Bret Cameron",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
