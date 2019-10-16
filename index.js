@@ -1,5 +1,5 @@
-const TypeChecker = require('./src/TypeChecker');
+const Scan = require('./src/Scan');
 
-const TC = new TypeChecker();
+const S = new Scan();
 
-module.exports = TC;
+module.exports = S;
