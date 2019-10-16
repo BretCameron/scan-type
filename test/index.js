@@ -76,7 +76,7 @@ const types = {
   },
   "Infinite": {
     "function": TC.isInfinite,
-    "instance": Infinity,
+    "instance": -Infinity,
   },
   "Int8Array": {
     "function": TC.isInt8Array,

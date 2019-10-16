@@ -11,9 +11,25 @@
     "test": "mocha",
     "jsdoc": "jsdoc src/ScanType.js README.md"
   },
-  "keywords": [],
-  "author": "Bret Cameron",
+  "homepage": "https://github.com/BretCameron/scan-type",
+  "bugs": {
+    "url": "https://github.com/BretCameron/scan-type/issues",
+    "email": "bretcameron@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BretCameron/scan-type.git"
+  },
+  "keywords": [
+    "type",
+    "scan",
+    "check",
+    "checking",
+    "library"
+  ],
+  "author": "Bret Cameron <bretcameron@gmail.com>",
   "license": "MIT",
+  "private": false,
   "dependencies": {},
   "devDependencies": {}
 }
